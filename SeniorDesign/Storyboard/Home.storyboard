@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="CSf-ja-1q4">
+            <objects>
+                <viewController id="GEj-xh-1Ta" customClass="HomeViewController" customModule="SeniorDesign" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5A9-s1-gdo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LA0-aF-d3C">
+                                <rect key="frame" x="0.0" y="64" width="375" height="141"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="jR7-KE-qk4">
+                                        <rect key="frame" x="16" y="46" width="226" height="48"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aFr-9D-1Dx">
+                                                <rect key="frame" x="0.0" y="0.0" width="226" height="48"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="My Fridge">
+                                                        <attributes>
+                                                            <font key="NSFont" size="44" name="STIXGeneral-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fridge_selector-product_large" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sBk-ng-an3">
+                                        <rect key="frame" x="244" y="4" width="116" height="133"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="sBk-ng-an3" secondAttribute="height" multiplier="116:133" id="xh7-cg-5YD"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="sBk-ng-an3" firstAttribute="top" secondItem="LA0-aF-d3C" secondAttribute="top" constant="4" id="15m-Hy-UwZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="aFr-9D-1Dx" secondAttribute="bottom" constant="47" id="G2T-pu-jVp"/>
+                                    <constraint firstAttribute="bottom" secondItem="sBk-ng-an3" secondAttribute="bottom" constant="4" id="TYX-YG-KLv"/>
+                                    <constraint firstItem="jR7-KE-qk4" firstAttribute="leading" secondItem="LA0-aF-d3C" secondAttribute="leading" constant="16" id="Utj-9m-sKX"/>
+                                    <constraint firstItem="aFr-9D-1Dx" firstAttribute="top" secondItem="LA0-aF-d3C" secondAttribute="top" constant="46" id="VGQ-6A-iBy"/>
+                                    <constraint firstAttribute="trailing" secondItem="sBk-ng-an3" secondAttribute="trailing" constant="15" id="lRC-DT-kOA"/>
+                                    <constraint firstItem="sBk-ng-an3" firstAttribute="leading" secondItem="jR7-KE-qk4" secondAttribute="trailing" constant="2.3333333333333144" id="rji-1q-7oK"/>
+                                    <constraint firstAttribute="height" constant="141" id="ynv-gl-KtX"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="1Dy-6a-iAw">
+                                <rect key="frame" x="37" y="213" width="301" height="50"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Opc-p6-ZVw" customClass="LGButton" customModule="LGButton">
+                                        <rect key="frame" x="0.0" y="8.5" width="87" height="33"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="spacingTitleIcon">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="titleString" value="WATER"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="showTouchFeedback" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                                <color key="value" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="fullyRoundedCorners" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.26422481874476755" green="0.45956593793624501" blue="0.96080166101455688" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="waterButton:" destination="GEj-xh-1Ta" eventType="touchUpInside" id="iBt-53-S0e"/>
+                                        </connections>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ixl-IN-Bvf" customClass="LGButton" customModule="LGButton">
+                                        <rect key="frame" x="107" y="8.5" width="87" height="33"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="titleString" value="CAMERA"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="fullyRoundedCorners" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                                <color key="value" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.94258779287338257" green="0.69831260864491151" blue="0.51050863951370873" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="cameraButton:" destination="GEj-xh-1Ta" eventType="touchUpInside" id="KHm-VB-OAF"/>
+                                        </connections>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cyp-wD-0cS" customClass="LGButton" customModule="LGButton">
+                                        <rect key="frame" x="214" y="8.5" width="87" height="33"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="titleString" value="TEMP"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="fullyRoundedCorners" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                                <color key="value" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.76333724332944997" green="0.18469691338164687" blue="0.098676955347779149" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="tempButton:" destination="GEj-xh-1Ta" eventType="touchUpInside" id="43B-Xh-7pc"/>
+                                        </connections>
+                                    </view>
+                                </subviews>
+                                <gestureRecognizers/>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1jE-ro-PDd">
+                                <rect key="frame" x="0.0" y="271" width="375" height="396"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="V5b-a9-nZM">
+                                <rect key="frame" x="177" y="419" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="1jE-ro-PDd" firstAttribute="trailing" secondItem="sCF-84-hGO" secondAttribute="trailing" id="0nz-ca-XOt"/>
+                            <constraint firstItem="LA0-aF-d3C" firstAttribute="leading" secondItem="sCF-84-hGO" secondAttribute="leading" id="0vG-U8-Kjf"/>
+                            <constraint firstItem="1jE-ro-PDd" firstAttribute="top" secondItem="LA0-aF-d3C" secondAttribute="bottom" constant="66" id="A2I-Qu-qkg"/>
+                            <constraint firstItem="LA0-aF-d3C" firstAttribute="trailing" secondItem="sCF-84-hGO" secondAttribute="trailing" id="N6v-vN-ndd"/>
+                            <constraint firstItem="LA0-aF-d3C" firstAttribute="top" secondItem="sCF-84-hGO" secondAttribute="top" id="RPD-EJ-yfJ"/>
+                            <constraint firstItem="1Dy-6a-iAw" firstAttribute="leading" secondItem="sCF-84-hGO" secondAttribute="leading" constant="37" id="RUA-bl-zxn"/>
+                            <constraint firstItem="sCF-84-hGO" firstAttribute="trailing" secondItem="1Dy-6a-iAw" secondAttribute="trailing" constant="37" id="V88-RU-dbA"/>
+                            <constraint firstItem="sCF-84-hGO" firstAttribute="leading" secondItem="V5b-a9-nZM" secondAttribute="trailing" constant="-197" id="ZeY-7W-yWf"/>
+                            <constraint firstItem="1jE-ro-PDd" firstAttribute="bottom" secondItem="sCF-84-hGO" secondAttribute="bottom" id="aTh-DN-ehU"/>
+                            <constraint firstItem="1Dy-6a-iAw" firstAttribute="top" secondItem="sCF-84-hGO" secondAttribute="top" constant="149" id="q3z-rf-zhd"/>
+                            <constraint firstItem="1jE-ro-PDd" firstAttribute="top" secondItem="1Dy-6a-iAw" secondAttribute="bottom" constant="8" id="rN1-zt-xxg"/>
+                            <constraint firstItem="1jE-ro-PDd" firstAttribute="leading" secondItem="sCF-84-hGO" secondAttribute="leading" id="ugA-Ms-xcx"/>
+                            <constraint firstItem="sCF-84-hGO" firstAttribute="top" secondItem="V5b-a9-nZM" secondAttribute="bottom" constant="-375" id="xWg-4A-fuW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sCF-84-hGO"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home" id="MiY-or-etC">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="ZRO-Q2-GEM">
+                            <connections>
+                                <action selector="logout:" destination="GEj-xh-1Ta" id="gPF-xx-2Fp"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="bottomDisplay" destination="1jE-ro-PDd" id="d2f-bU-kaA"/>
+                        <outlet property="spinner" destination="V5b-a9-nZM" id="dbA-jt-krw"/>
+                        <outlet property="titleView" destination="LA0-aF-d3C" id="MoK-70-4qp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Zt-pN-G38" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="263.768115942029" y="1482.0652173913045"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="HzC-pM-tni">
+            <objects>
+                <navigationController storyboardIdentifier="NavigationHome" automaticallyAdjustsScrollViewInsets="NO" id="UHR-0k-iiA" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="QuickActions_Home" id="qg6-Jn-ghW">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MW4-SV-CP1">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="GEj-xh-1Ta" kind="relationship" relationship="rootViewController" id="9KH-hZ-hVX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5o5-qc-uzf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="271" y="722"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="QuickActions_Home" width="23" height="21"/>
+        <image name="fridge_selector-product_large" width="400" height="455"/>
+    </resources>
+</document>

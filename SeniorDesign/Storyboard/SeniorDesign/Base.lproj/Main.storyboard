@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4lM-Is-MXs">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main Tab Bar View Controller-->
+        <scene sceneID="Gqt-JS-Hlv">
+            <objects>
+                <tabBarController id="4lM-Is-MXs" customClass="MainTabBarViewController" customModule="SeniorDesign" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Pk9-it-ahs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="RMJ-Pa-Xms" kind="relationship" relationship="viewControllers" id="4aE-Yd-8k7"/>
+                        <segue destination="aUi-ul-DVw" kind="relationship" relationship="viewControllers" id="9BO-RI-hfd"/>
+                        <segue destination="Kgr-Ol-r1h" kind="relationship" relationship="viewControllers" id="INH-qa-D12"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9b0-sj-2k5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="270" y="-54"/>
+        </scene>
+        <!--NavigationProfile-->
+        <scene sceneID="bI5-6C-omg">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Profile" referencedIdentifier="NavigationProfile" id="RMJ-Pa-Xms" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="SIO-vD-Mmg"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SI3-yq-ANR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-82" y="400"/>
+        </scene>
+        <!--NavigationHome-->
+        <scene sceneID="FX7-E3-XP0">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" referencedIdentifier="NavigationHome" id="aUi-ul-DVw" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="f6e-L6-pWq"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IZt-Vi-UxN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="269" y="400"/>
+        </scene>
+        <!--NavigationSettings-->
+        <scene sceneID="qam-AX-Ieh">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Settings" referencedIdentifier="NavigationSettings" id="Kgr-Ol-r1h" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="bRn-yC-Xtc"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="65N-vr-2gM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="595" y="400"/>
+        </scene>
+    </scenes>
+</document>
